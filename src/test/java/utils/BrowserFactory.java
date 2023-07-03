@@ -6,9 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import steps.PageInitializers;
-
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class BrowserFactory {
@@ -23,10 +20,12 @@ public class BrowserFactory {
             switch (ConfigReader.getPropertyValue("browser")) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
+                    System.setProperty("webdriver.http.factory", "jdk-http-client");
                     driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(Boolean.parseBoolean(ConfigReader.getPropertyValue("headless")))));
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
+                    System.setProperty("webdriver.http.factory", "jdk-http-client");
                     driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(Boolean.parseBoolean(ConfigReader.getPropertyValue("headless")))));
                     break;
                 default:
