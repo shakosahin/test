@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-03T23:55:36.202Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7406890000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.start()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verifying \"About this item\" feature for product page is present",
+        "description": "",
+        "id": "testing-amazon.in-\"about-this-item\"-feature;verifying-\"about-this-item\"-feature-for-product-page-is-present",
+        "after": [
+          {
+            "result": {
+              "duration": 214725000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101715000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to tutorials ninja website and verify that the url is \"https://www.amazon.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.in/\"",
+                  "offset": 69
+                }
+              ],
+              "location": "steps.Test1Steps.userNavigatesToTutorialsNinjaWebsiteAndVerifyThatTheUrlIs(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d114.0.5735.198)\nBuild info: version: \u00274.1.4\u0027, revision: \u0027535d840ee2\u0027\nSystem info: host: \u0027Sakirs-MBP.lan\u0027, ip: \u00272603:800c:1700:46b4:0:0:0:1571%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.4.1\u0027, java.version: \u002718.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a9ed0eed66b74657a9bd89930942fb24, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/k6/v587rhlx46d...}, goog:chromeOptions: {debuggerAddress: localhost:60706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60706/devtoo..., se:cdpVersion: 114.0.5735.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: a9ed0eed66b74657a9bd89930942fb24\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)\n\tat utils.CommonMethods.takeScreenShot(CommonMethods.java:118)\n\tat steps.Hooks.afterStep(Hooks.java:23)\n",
+                  "duration": 1361749000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user clicks on the hamburger menu in the top left corner",
+            "match": {
+              "location": "steps.Test1Steps.userClicksOnTheHamburgerMenuInTheTopLeftCorner()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 156000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 173000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user scrolls down and then Click on the \"TV, Appliances, Electronics\" link under Shop by Department section.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TV, Appliances, Electronics\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.Test1Steps.userScrollsDownAndThenClickOnTheLinkUnderShopByDepartmentSection(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 164000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user clicks on \"Televisions\" under Tv, Audio \u0026 Cameras sub section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Televisions\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.Test1Steps.userClicksOnUnderTvAudioCamerasSubSection(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 173000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user scrolls down and filter the results by Brand \"Samsung\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Samsung\"",
+                  "offset": 50
+                }
+              ],
+              "location": "steps.Test1Steps.userScrollsDownAndFilterTheResultsByBrand(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 123000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user sorts the Samsung results with \"Price: High to Low\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price: High to Low\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.Test1Steps.userSortsTheSamsungResultsWith(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 134000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user clicks on the \"2.\" highest priced item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.Test1Steps.userClicksOnTheHighestPricedItem(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 120000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 182000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user verifies that \"About this item\" section is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"About this item\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.Test1Steps.userVerifiesThatSectionIsPresent(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 124000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "steps.Hooks.afterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Amazon.in \"About this item\" feature",
+    "description": "",
+    "id": "testing-amazon.in-\"about-this-item\"-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Test1.feature",
+    "tags": []
+  }
+]
